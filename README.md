@@ -4,7 +4,11 @@
 
 # React + TypeScript + Vite
 
- A dark-mode-first component library built for the modern web. Because your eyes deserve better than blinding white backgrounds.
+A dark-mode-first component library built for the modern web. Because your eyes deserve better than blinding white backgrounds.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maryamDev-autometa/cult-ui)
+
+**[Live Demo →](https://cult-ui.vercel.app)** | **[GitHub Repository](https://github.com/maryamDev-autometa/cult-ui)**
 
 ## 🌙 Why Cult UI?
 
@@ -81,9 +85,20 @@ When you tell an AI assistant "use Cult UI", it understands that:
 
 ## 📦 Installation
 
+### Quick Start with Vercel
+
+The fastest way to get started is to deploy your own instance:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maryamDev-autometa/cult-ui)
+
+### Local Development
+
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/maryamDev-autometa/cult-ui.git
+
+# Navigate to the project
+cd cult-ui
 
 # Install dependencies
 npm install
@@ -91,6 +106,8 @@ npm install
 # Start development server
 npm run dev
 ```
+
+The development server will start at `http://localhost:5173`
 
 ## 🎨 Usage Example
 
