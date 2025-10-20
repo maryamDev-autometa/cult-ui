@@ -1,4 +1,8 @@
-# Cult UI
+## CULT UI
+
+<img width="546" height="457" alt="Untitled_design-removebg-preview" src="https://github.com/user-attachments/assets/0459845f-d9e2-4fba-a8b6-0ea591ea71cc" />
+
+# React + TypeScript + Vite
 
 <img width="546" height="457" alt="Untitled_design-removebg-preview" src="https://github.com/user-attachments/assets/0459845f-d9e2-4fba-a8b6-0ea591ea71cc" />
 
