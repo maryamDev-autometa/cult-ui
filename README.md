@@ -8,7 +8,7 @@ A dark-mode-first component library built for the modern web. Because your eyes 
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maryamDev-autometa/cult-ui)
 
-**[Live Demo →](https://cult-ui.vercel.app)** | **[GitHub Repository](https://github.com/maryamDev-autometa/cult-ui)**
+**[Live Demo →](https://cult-ht80h4y6z-dev-at-autometas-projects.vercel.app/)** | **[GitHub Repository](https://github.com/maryamDev-autometa/cult-ui)**
 
 ## 🌙 Why Cult UI?
 
