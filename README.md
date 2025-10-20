@@ -1,130 +1,19 @@
-# Cult UI
+# React + TypeScript + Vite
 
-![Cult UI Preview](./preview.png)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-> A dark-mode-first component library built for the modern web. Because your eyes deserve better than blinding white backgrounds.
+Currently, two official plugins are available:
 
-## 🌙 Why Cult UI?
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### The Problem with Traditional UI Libraries
+## React Compiler
 
-If you've ever worked with agentic AI assistants (Claude, ChatGPT, etc.) to build web applications, you've probably experienced this frustrating pattern:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-1. **You**: "Add dark mode to my app"
-2. **AI**: *Changes `bg-white` to `bg-black`*
-3. **Result**: Black text on black background. Everything disappears.
+## Expanding the ESLint configuration
 
-This creates an **overwhelming situation** where:
-- Text becomes invisible in dark mode
-- You spend hours debugging color conflicts
-- The AI keeps "fixing" things by adding more random color classes
-- You end up with a mess of `dark:text-white` scattered everywhere inconsistently
-
-### The Cult UI Solution
-
-**Cult UI is built dark-mode-first from the ground up.**
-
-Instead of retrofitting dark mode onto light components, every component in Cult UI is:
-- ✨ **Designed for dark mode by default** - No more invisible text
-- 🎨 **Styled with proper dark/light contrast** - Both modes work beautifully
-- 🧩 **Semantically structured** - Colors adapt intelligently
-- 🚀 **Production-ready** - No debugging color conflicts at 3 AM
-
-When you tell an AI assistant "use Cult UI", it understands that:
-- The components already handle dark mode properly
-- The color system is semantic (`bg-gray-900 dark:bg-gray-100` patterns are built-in)
-- Text visibility is guaranteed in both modes
-
-**Result**: You get working dark mode components on the first try, not the twentieth.
-
-## 🎯 Key Features
-
-- **Dark-Mode-First Architecture** - Components designed for dark backgrounds, light mode as a thoughtful alternative
-- **Semantic Color System** - Intelligent color tokens that adapt to theme context
-- **Gesture-Based Interactions** - Built-in support for drag, pinch, zoom with @use-gesture/react
-- **Spring Animations** - Smooth, physics-based animations with @react-spring/web
-- **Type-Safe** - Full TypeScript support with proper type definitions
-- **Radix UI Foundation** - Built on accessible, headless UI primitives
-- **Tailwind CSS** - Utility-first styling with custom design tokens
-
-## 🧩 Components
-
-### Interactive Elements
-- **Buttons** - Multiple variants with dark-mode-optimized hover states
-- **Cards** - Expandable cards with smooth animations
-- **Forms** - Input fields with proper dark/light contrast
-
-### Visual Components
-- **Carousels** - Infinite scrolling logo carousels
-- **Lightboard** - LED dot matrix display simulation
-- **Typography** - Gradient headings, typewriter effects
-- **Timers** - Countdown timers with animations
-
-### Animations
-- **Typewriter** - Character-by-character text reveal
-- **Gradient Shift** - Animated gradient backgrounds
-- **Scroll Animations** - Smooth infinite scrolling
-
-## 🚀 Tech Stack
-
-- **React 19** - Latest React with compiler optimizations
-- **TypeScript** - Full type safety
-- **Vite** - Lightning-fast development
-- **Tailwind CSS v3** - Utility-first styling with dark mode class strategy
-- **Framer Motion** - Advanced animations
-- **@use-gesture/react** - Touch and mouse gesture recognition
-- **@react-spring/web** - Spring physics animations
-- **Radix UI** - Accessible component primitives
-- **Class Variance Authority** - Type-safe component variants
-
-## 📦 Installation
-
-```bash
-# Clone the repository
-git clone <your-repo-url>
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-## 🎨 Usage Example
-
-```tsx
-import { GradientHeading } from '@/components/ui/gradient-heading'
-import { Typewriter } from '@/components/ui/typewriter'
-import { ExpandableCard } from '@/components/ui/expandable-card'
-
-function App() {
-  return (
-    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
-      <GradientHeading size="xl">
-        Welcome to Cult UI
-      </GradientHeading>
-
-      <Typewriter
-        text="Where dark mode actually works"
-        speed={50}
-      />
-
-      <ExpandableCard
-        title="Dark Mode First"
-        description="Built for the modern web"
-      >
-        <p>No more invisible text bugs!</p>
-      </ExpandableCard>
-    </div>
-  )
-</div>
-  )
-}
-```
-
-## 🌓 Dark Mode Implementation
-
-Cult UI uses Tailwind's `class` strategy for dark mode:
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
 ```js
 // tailwind.config.js
